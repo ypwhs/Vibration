@@ -50,7 +50,7 @@ public class Vibration extends Activity {
     }
 
     void startVibrate(int value){
-        long pattern[] = {10-value, 10+value, 10-value, 10+value};
+        long pattern[] = {10-value, value, 10-value, value};
         if(value==0)vibrator.cancel();
         else vibrator.vibrate(pattern, 2);
     }
